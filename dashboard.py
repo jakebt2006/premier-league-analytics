@@ -22,7 +22,7 @@ st.caption("Interactive Premier League performance analysis")
 st.write("Explore Premier League statistics, league tables and team performances.")
 # displays text on the webpage
 
-season_files = {"2025/26": "matches.csv", "2024/25": "matches_2024.csv", "2023/24": "matches_2023.csv"}
+season_files = {"2025/26": "https://www.football-data.co.uk/mmz4281/2526/E0.csv", "2024/25": "https://www.football-data.co.uk/mmz4281/2425/E0.csv", "2023/24": "https://www.football-data.co.uk/mmz4281/2324/E0.csv"}
 # creates a dictionary where each key is a season displayed to the user and eaach value is the CVS filename
 
 selected_season = st.sidebar.selectbox("Select Premier League season:", list(season_files.keys()))
