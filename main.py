@@ -89,9 +89,6 @@ def create_league_table(filename):
 
     return stats_table
 
-stats_table = create_league_table("matches.csv")
-# we call the funtion and give it the aurgument 
-
 
 def create_points_chart(stats_table):
     fig = px.bar(stats_table, x="Points", y="Team", orientation="h", color="Points", color_continuous_scale="Reds", title="Premier League - Points by Team")
