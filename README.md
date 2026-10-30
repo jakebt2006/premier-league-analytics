@@ -2,6 +2,10 @@
 
 An interactive football analytics dashboard built using Python, Pandas, Plotly and Streamlit to analyse and compare English Premier League team performances across multiple seasons.
 
+### Live Dashboard
+
+[View the Interactive Premier League Analytics Dashboard](https://premier-league-analytics-h6vv5ehwdlplaysogchru7.streamlit.app)
+
 ## Project Overview
 
 This project transforms historical Premier League match results into an interactive dashboard, allowing users to explore league standings, visualise team performance and compare statistics across seasons.
@@ -11,7 +15,7 @@ The dashboard currently supports the 2023/24, 2024/25 and 2025/26 seasons.
 ## Key Features
 
 - **League Overview:** Automatically generated league tables with points, wins, draws, losses, goals scored, goals conceded and goal difference.
-- **Interactive Visualisations:** Bar charts showing points by team and scatter plots comparing goals scored against goals conceded.
+- **Interactive Visualisations:** Bar charts showing points by team and grouped bar charts comparing goals scored against goals conceded.
 - **Team Analysis:** Individual team statistics and performance metrics.
 - **Team Comparison:** Compare two Premier League teams using selectable performance statistics.
 - **Season Selection:** Switch between three Premier League seasons.
@@ -28,11 +32,9 @@ The dashboard currently supports the 2023/24, 2024/25 and 2025/26 seasons.
 
 1. Clone the repository.
 2. Install the dependencies using `pip install -r requirements.txt`.
-3. Obtain the required Premier League match datasets from [Football-Data.co.uk](https://www.football-data.co.uk/).
-4. Place the relevant CSV files in the project directory, named `matches.csv`, `matches_2024.csv` and `matches_2023.csv`.
-5. Run `streamlit run dashboard.py`.
+3. Run `streamlit run dashboard.py`.
 
-The original datasets are not included in this repository.
+The dashboard automatically retrieves Premier League match data from Football-Data.co.uk, so no manual dataset downloads are required.
 
 ## Data Source
 
